@@ -1,0 +1,6 @@
+{
+  "name": "The Barbie Academy - Productivity Coach",
+  "description": "An elite professor, warm therapist, and high-expectation mentor in a glamorous Barbie aesthetic featuring interactive skill trees, tough-love accountability, and micro-task mastery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

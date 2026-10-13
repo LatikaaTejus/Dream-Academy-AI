@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --barbie-pink: #ff1493;
+    --barbie-deep: #db0075;
+    --barbie-pastel: #ffe4f3;
+    --barbie-gold: #f59e0b;
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #fff5f9;
+    color: #1e1022;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-dream {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom scrollbars with pink accents */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fdf2f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+
+@keyframes sparkle-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-6px) rotate(15deg);
+    opacity: 1;
+  }
+}
+
+.animate-sparkle {
+  animation: sparkle-float 2.5s ease-in-out infinite;
+}
